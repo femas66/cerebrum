@@ -6,9 +6,10 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
+			favicon: '/pus.ico',
 			title: 'zylus',
-			tableOfContents: false,
-			lastUpdated: true,
+			description: 'My personal website',
+			tableOfContents: true,
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/femas66' }],
 			sidebar: [
 				{
